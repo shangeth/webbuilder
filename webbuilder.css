@@ -9,6 +9,7 @@ body{
 }
 
 #logotitle{
+<<<<<<< HEAD
     height: 50px;
     width: 120px;
 }
@@ -190,6 +191,7 @@ input[type="file"]{
    margin: 0 auto;
     width: 50%;
 }
+<<<<<<< HEAD
 
 #reco{
     
@@ -197,3 +199,5 @@ input[type="file"]{
     width: 30px;
     background: black;
 }
+=======
+>>>>>>> 5b76b6bb80f14b4a4228107c2fc88ff437937870
