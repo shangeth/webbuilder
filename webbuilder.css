@@ -3,14 +3,14 @@ body{
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-   background-image: url("http://wallpaper-gallery.net/images/website-background-wallpapers/website-background-wallpapers-20.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+   background: url("http://wallpaper-gallery.net/images/website-background-wallpapers/website-background-wallpapers-20.jpg") no-repeat center center fixed;
     color: white;
+    background-size: cover;
 }
 
 #logotitle{
-    color: white;
+    height: 50px;
+    width: 120px;
 }
 
 #header{
@@ -189,4 +189,11 @@ input[type="file"]{
     text-align: center;
    margin: 0 auto;
     width: 50%;
+}
+
+#reco{
+    
+    height: 10px;
+    width: 30px;
+    background: black;
 }
