@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> WebBuilder2  </title>
+        <!-----------Style Sheet------------------->
+        <link href="webbuilder.css" rel="stylesheet" type="text/css">
+        <!------------BootStrap---------------------->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    </head>
+    <body> 
+  <!---------------------------------------------------------------------------------->
+        <nav id="header" class="navbar navbar-toggleable-sm navbar-light bg-inverse">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" href="#" id="logotitle"><strong>&lt;WebBuilder&gt;</strong></a>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div id="buttonContainer" class="nav justify-content-center">
+                    <div class="toggleButton  nav-item" id="html">HTML</div>
+                    <div class="toggleButton nav-item" id="css">CSS</div>
+                    <div class="toggleButton nav-item" id="js">JavaScript</div>
+                    <div class="toggleButton  nav-item" id="output">Output</div>
+
+                </div>
+            </div>
+        </nav>
+<!---------------------------------------------------------------------------------->
+        <div  id="bodyContainer">
+    <!---------------------------------------------------------------------------------->  
+            <div id="alert1" class="alert alert-success alert-dismissible" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>Welcome to WebBuilder!!</div>
+            
+             <div id="alert2" class="alert hidden alert-success alert-dismissible" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>Click on the buttons in the navbar <strong>(&uarr;)</strong> to get the textarea!!!</div>
+            
+             <div id="alert3" class="alert hidden alert-success alert-dismissible" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>Welcome to WebBuilder!!</div>
+            
+            
+            <div id="htmlBox" class="Box hidden">
+             
+             <div id="htmlPanelTitle" class="panelTitle">HTML</div>
+             <textarea id="htmlPanel"class="panel"></textarea>
+                
+             <div class="save"> 
+                 
+		             <div class="row">
+                     
+		             <div class="col-sm-4"><button class="toggleButton" onclick="saveTextAsFilehtml()">Save File</button></div>
+                         
+                     <div class="col-sm-8"><input id="inputFileNameToSaveAshtml" placeholder="file.html" class="savebtn">
+                         </input></div>
+                     </div>
+                 
+	           
+                
+                    <div class="row">
+                        <div class="col-sm-4" >
+                     <button class="toggleButton" onclick="loadFileAsTexthtml()">Load File</button></div>
+                       <div class="col-sm-8" >  
+                           <input type="file" id="fileToLoadhtml" ></div>
+                     </div>
+                 
+             </div>
+          
+
+            </div>
+        
+    <!---------------------------------------------------------------------------------->
+    
+        <div id="cssBox" class="Box hidden">
+             
+             <div id="cssPanelTitle" class="panelTitle">CSS</div>
+             <textarea id="cssPanel"class="panel"></textarea>
+                
+             <div class="save"> 
+                 
+		             <div class="row">
+                     
+		             <div class="col-sm-4"><button class="toggleButton" onclick="saveTextAsFilecss()">Save File</button></div>
+                         
+                     <div class="col-sm-8"><input id="inputFileNameToSaveAscss" placeholder="file.css" class="savebtn">
+                         </input></div>
+                     </div>
+                 
+	           
+                
+                    <div class="row">
+                        <div class="col-sm-4" >
+                     <button class="toggleButton" onclick="loadFileAsTextcss()">Load File</button></div>
+                       <div class="col-sm-8" >  
+                           <input type="file" id="fileToLoadcss" ></div>
+                     </div>
+                 
+             </div>
+          
+
+            </div>
+        
+    
+    <!---------------------------------------------------------------------------------->
+
+<div id="jsBox" class="Box hidden">
+             
+             <div id="jsPanelTitle" class="panelTitle">JavaScript</div>
+             <textarea id="jsPanel"class="panel"></textarea>
+                
+             <div class="save"> 
+                 
+		             <div class="row">
+                     
+		             <div class="col-sm-4"><button class="toggleButton" onclick="saveTextAsFilejs()">Save File</button></div>
+                         
+                     <div class="col-sm-8"><input id="inputFileNameToSaveAsjs" placeholder="file.js" class="savebtn">
+                         </input></div>
+                     </div>
+                 
+	           
+                
+                    <div class="row">
+                        <div class="col-sm-4" >
+                     <button class="toggleButton" onclick="loadFileAsTextjs()">Load File</button></div>
+                       <div class="col-sm-8" >  
+                           <input type="file" id="fileToLoadjs" ></div>
+                     </div>
+                 
+             </div>
+          
+
+            </div>
+        
+
+
+    <!---------------------------------------------------------------------------------->
+    
+    
+    
+    
+    
+        <div id="outputBox" class="Box hidden clearfix">
+          <div id="outputPanelTitle" class="panelTitle">OUTPUT</div>
+            <iframe id="outputPanel" class="panel"></iframe>      
+        </div>
+        
+        
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- install jquerry from server directly-->
+        <script src="//code.jquery.com/jquery-3.2.1.min.js"></script> 
+        <script src="webbuilder.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    </body>
+</html> 
