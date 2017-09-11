@@ -35,9 +35,10 @@ $(".toggleButton").hover(function(){
 
 $(".toggleButton").click(function(){
     
+    
     $(".alert").remove();
     
-   $("#alert").remove();
+  $("#alert3").show();
     //change background of element when clicked
     $(this).toggleClass("active1");
     

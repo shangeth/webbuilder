@@ -3,13 +3,12 @@ body{
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-   background: url("http://wallpaper-gallery.net/images/website-background-wallpapers/website-background-wallpapers-20.jpg") no-repeat center center fixed;
+   background: url("https://www.adtechnosys.com/wp-content/uploads/2015/04/Website-Design-Background.png") no-repeat center center fixed;
     color: white;
     background-size: cover;
 }
 
 #logotitle{
-<<<<<<< HEAD
     height: 50px;
     width: 120px;
 }
@@ -191,7 +190,6 @@ input[type="file"]{
    margin: 0 auto;
     width: 50%;
 }
-<<<<<<< HEAD
 
 #reco{
     
@@ -199,5 +197,3 @@ input[type="file"]{
     width: 30px;
     background: black;
 }
-=======
->>>>>>> 5b76b6bb80f14b4a4228107c2fc88ff437937870
